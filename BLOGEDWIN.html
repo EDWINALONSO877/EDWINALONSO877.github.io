@@ -112,6 +112,7 @@
 <body>
     <header>
         <h1>Blog Edwin Alonso</h1>
+        <p id="datetime"></p>
     </header>
     <nav>
         <ul>
@@ -188,5 +189,9 @@
     <footer>
         <p>Derechos de autor © 2024 Blog Edwin Alonso</p>
     </footer>
+       <script>
+        var dt = new Date();
+        document.getElementById("datetime").innerHTML = dt.toLocaleString();
+    </script>
 </body>
 </html>
